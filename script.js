@@ -3,10 +3,12 @@ let hamburger = document.getElementById("hamburger")
 let menu = document.getElementById("menu11")
 let close = document.getElementById("button1")
 let html = document.documentElement;
+let donate = document.getElementById("button-donate")
 const slides = document.querySelectorAll('.slide');
 
-
-
+donate.addEventListener("click", function() {
+  window.location.href = "donate.html";
+});
 hamburger.addEventListener("click", function (event) {
   event.stopPropagation(); 
   if (menu.style.display === "block") {
