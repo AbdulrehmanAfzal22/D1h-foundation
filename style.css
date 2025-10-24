@@ -209,8 +209,46 @@ body {
   padding: 25px;
   gap: 10px;
   z-index: 9999;
+  width: 250px; 
+
+  position: fixed;
 }
 
+
+.close-btn {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #313031;
+}
+
+.close-btn.small {
+  width: 24px;
+  height: 24px;
+}
+.close-btn.small svg { width:12px; height:12px; }
+.offer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:23px;
+}
 .menu1 li {
   list-style: none;
   color: white;
@@ -249,19 +287,10 @@ body {
 
 }
 
-.button1{
-  background-color: #194592;
-  color: white;
-  padding: 4px;
-  border-radius: 10px;
-  border: none;
-}
-.offer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:23px;
-}
+
+
+
+
 
 .heading1{
   display: flex;

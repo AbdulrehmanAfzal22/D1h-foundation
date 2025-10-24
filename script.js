@@ -2,50 +2,36 @@ let currentSlide = 0;
 let hamburger = document.getElementById("hamburger")
 let menu = document.getElementById("menu11")
 let close = document.getElementById("button1")
-
-close.addEventListener("click", function () {
-  menu.style.display = "none"
-})
-
-hamburger.addEventListener("click" , function () {
-  menu.style.display = "block"
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let html = document.documentElement;
 const slides = document.querySelectorAll('.slide');
+
+
+
+hamburger.addEventListener("click", function (event) {
+  event.stopPropagation(); 
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});
+
+
+close.addEventListener("click", function (event) {
+  event.stopPropagation(); 
+  menu.style.display = "none";
+});
+
+
+html.addEventListener("click", function () {
+  menu.style.display = "none"; 
+});
+
+
+menu.addEventListener("click", function (event) {
+  event.stopPropagation(); 
+});
+
 
 function changeSlide() {
   slides[currentSlide].classList.remove('active');
