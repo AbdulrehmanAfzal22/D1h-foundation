@@ -230,12 +230,13 @@ body {
   background: transparent;
   cursor: pointer;
   color: #fff;
-  
+  background-color: red;
+  border-radius: 55px;
 }
 
 .close-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #313031;
+background-color: rgb(148, 2, 2);
+color: white;
 }
 
 .close-btn.small {
