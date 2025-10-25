@@ -1,6 +1,9 @@
 let hamburger = document.getElementById("hamburger")
 let menu = document.getElementById("menu11")
 let close = document.getElementById("button1")
+let donate = document.getElementById("button-donate")
+
+
 
 hamburger.addEventListener("click", function (event) {
   event.stopPropagation(); 
@@ -10,8 +13,6 @@ hamburger.addEventListener("click", function (event) {
     menu.style.display = "block";
   }
 });
-
-
 close.addEventListener("click", function (event) {
   event.stopPropagation(); 
   menu.style.display = "none";
